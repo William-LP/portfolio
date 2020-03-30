@@ -2,3 +2,4 @@
 
 * Link resume in PDF to the download button
 * Work on my tech logo (not so neat)
+* Setup multi-language 
