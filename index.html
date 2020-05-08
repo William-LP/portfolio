@@ -1,5 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
+<script src="js/translate.js"></script>
+<script>
+  function load() {
+    var translate = new Translate();
+    var currentLng = 'en';//'fr'
+    var attributeName = 'lang-tag';
+    translate.init(attributeName, currentLng);
+    translate.process();
+  }
+</script>
 
 <head>
 
@@ -8,7 +19,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Resume - William LE POMMELET</title>
+  <title lang-type="title"></title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
