@@ -1,7 +1,8 @@
 {
-    "about": "A propos de moi",
-    "email": "Email",
-    "password": "Mot de passe",
-    "subject": "Sujet",
-    "message": "Message"
+    "about": "à propos de moi",
+    "experience": "Experience",
+    "education": "éducation",
+    "skills": "Compétences",
+    "interests": "Intérêts",
+    "softskills": "Compétences humaines"
 }

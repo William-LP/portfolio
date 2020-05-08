@@ -1,7 +1,8 @@
 {
     "about": "About",
-    "email": "Email",
-    "password": "Password",
-    "subject": "Subject",
-    "message": "Message"
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "interests": "Interests",
+    "softskills": "Soft Skills"
 }
