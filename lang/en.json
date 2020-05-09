@@ -6,5 +6,22 @@
     "interests": "Interests",
     "softskills": "Soft Skills",
     "language":"Français",
-    "about-1": "I am experienced in scripting and tasks scheduling to provide a better usage of human workforce. <br /> Interested to enlarge my knowlege about DevOps frameworks."
+    "about-1": "I am experienced in scripting and tasks scheduling to provide a better usage of human workforce. <br /> Interested to enlarge my knowlege about DevOps frameworks.",
+    "experience-1-position":"Exploitation Analyst",
+    "experience-1-company":"Capgemini",
+    "experience-1-description":"Production industrialization and application deployement using scripts within different schedulers.<br />Technology watch, proof of concept and training peers.",
+    "experience-1-date":"September 2017 - August 2019",
+    "experience-2-position":"ICT Engineer",
+    "experience-2-company":"Aberdeenshire City Council",
+    "experience-2-description":"Survey, study, deployement, configuration, testing and documentation of wireless network within public facilities accross whole Aberdeenshire.<br /> User support and infrastructure monitoring.",
+    "experience-2-date":"January 2016 - April 2017",
+    "experience-3-position":"Technical Support",
+    "experience-3-company":"Cap Info System Group",
+    "experience-3-description":"Supporting user using business application and retail devices along as monitoring the technical infrastructure.<br /> Scripting tools for my team to work more efficiently everyday.",
+    "experience-3-date":"December 2013 - August 2014",
+    "experience-4-position":"Work Placements &amp; Short Term contracts",
+    "experience-4-company":"France &amp; abroad",
+    "experience-4-description":"Discovering many differents jobs and positions in various companies from 2-people sized business to worlwide company; public and private; B2B, B2C and laboratory.<br /> Contracts or placements froms 3 weeks to 4 months long in France and UK, learning aspect of team working, client´s relation and work framework.",
+    "experience-4-date":"September 2008 - June 2015"
+
 }

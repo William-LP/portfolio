@@ -3,7 +3,7 @@
 
 <script src="js/translate.js"></script>
 <script>
-  var currentLng = "fr";
+  var currentLng = "en";
   function load() {
     if (currentLng == 'fr') {
       currentLng = 'en';
@@ -74,7 +74,7 @@
         </li>
         <br>
         <li class="nav-item">
-          <a href="javascript:load();" class="nav-link js-scroll-trigger border" data-tag="language">English</a>
+          <a href="javascript:load();" class="nav-link js-scroll-trigger" data-tag="language">English</a>
         </li>
       </ul>
     </div>
@@ -120,57 +120,61 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
+        <h2 class="mb-5" data-tag="experience">Experience</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Exploitation Analyst</h3>
-            <div class="subheading mb-3">Capgemini</div>
-            <p>Production industrialization and application deployement using scripts within different
+            <h3 class="mb-0" data-tag="experience-1-position">Exploitation Analyst</h3>
+            <div class="subheading mb-3" data-tag="experience-1-company">Capgemini</div>
+            <p data-tag="experience-1-description">Production industrialization and application deployement using
+              scripts within different
               schedulers.<br />Technology watch, proof of concept and training peers. </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">September 2017 - August 2019</span>
+            <span class="text-primary" data-tag="experience-1-date">September 2017 - August 2019</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">ICT Engineer</h3>
-            <div class="subheading mb-3">Aberdeenshire City Council</div>
-            <p>Survey, study, deployement, configuration, testing and documentation of wireless network within public
+            <h3 class="mb-0" data-tag="experience-2-position">ICT Engineer</h3>
+            <div class="subheading mb-3" data-tag="experience-2-company">Aberdeenshire City Council</div>
+            <p data-tag="experience-2-description">Survey, study, deployement, configuration, testing and documentation
+              of wireless network within public
               facilities accross whole Aberdeenshire.<br />
               User support and infrastructure monitoring.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">January 2016 - April 2017</span>
+            <span class="text-primary" data-tag="experience-2-date">January 2016 - April 2017</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Technical Support</h3>
-            <div class="subheading mb-3">Cap Info System Group</div>
-            <p>Supporting user using business application and retail devices along as monitoring the technical
+            <h3 class="mb-0" data-tag="experience-3-position">Technical Support</h3>
+            <div class="subheading mb-3" data-tag="experience-3-company">Cap Info System Group</div>
+            <p data-tag="experience-3-description">Supporting user using business application and retail devices along
+              as monitoring the technical
               infrastructure.<br />
               Scripting tools for my team to work more efficiently everyday.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">December 2013 - August 2014</span>
+            <span class="text-primary" data-tag="experience-3-date">December 2013 - August 2014</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Work Placements &amp; Short Term contracts</h3>
-            <div class="subheading mb-3">France &amp; abroad</div>
-            <p>Discovering many differents jobs and positions in various companies from 2-people sized business to
+            <h3 class="mb-0" data-tag="experience-4-position">Work Placements &amp; Short Term contracts</h3>
+            <div class="subheading mb-3" data-tag="experience-4-company">France &amp; abroad</div>
+            <p data-tag="experience-4-description">Discovering many differents jobs and positions in various companies
+              from 2-people sized business to
               worlwide company; public and private; B2B, B2C and laboratory.<br />
               Contracts or placements froms 3 weeks to 4 months long in France and UK, learning aspect of team working,
               client´s relation and work framework.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">September 2008 - June 2015</span>
+            <span class="text-primary" data-tag="experience-4-date">September 2008 - June 2015</span>
           </div>
         </div>
 
@@ -182,7 +186,7 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
-        <h2 class="mb-5">Education</h2>
+        <h2 class="mb-5" data-tag="education">Education</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
@@ -228,7 +232,7 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
+        <h2 class="mb-5" data-tag="skills">Skills</h2>
 
         <div class="subheading mb-3">Programming Languages</div>
         <ul class="list-inline dev-icons">
@@ -293,7 +297,7 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
+        <h2 class="mb-5" data-tag="interests">Interests</h2>
         <p>Apart from being an IT scientist, I enjoy most of my time being outdoors. In the winter, I am an avid
           snowboarder and novice ice climber. During the warmer months here in France, I enjoy mountain hiking, running
           and kayaking.</p>
@@ -308,7 +312,7 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
-        <h2 class="mb-5">Soft skills</h2>
+        <h2 class="mb-5" data-tag="softskills">Soft skills</h2>
         <ul class="fa-ul mb-0">
           <li>
             <i class="fa-li fa fa-people-carry text-warning"></i>
