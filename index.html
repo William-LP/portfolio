@@ -3,9 +3,14 @@
 
 <script src="js/translate.js"></script>
 <script>
+  var currentLng = "fr";
   function load() {
+    if (currentLng == 'fr') {
+      currentLng = 'en';
+    } else {
+      currentLng = 'fr';
+    }
     var translate = new Translate();
-    var currentLng = 'fr';//'fr'
     var attributeName = 'data-tag';
     translate.init(attributeName, currentLng);
     translate.process();
