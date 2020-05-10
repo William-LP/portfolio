@@ -1,3 +1,3 @@
 # To do
 
-* Link resume in PDF to the download button
+* Translate tooltip in about and link an english resume to the download button
