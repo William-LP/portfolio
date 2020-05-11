@@ -5,26 +5,26 @@
 <script>
   var currentLng = "en";
   function load() {
-        // These following two lines are the part that matter
-        if (currentLng == 'fr') {
-          currentLng = 'en';
-          document.title = "Resume - William LE POMMELET";
-          document.getElementById('linkedin').setAttribute('title', 'Let\'s get in touch!');
-          document.getElementById('github').setAttribute('title', 'Check out my code!');
-          document.getElementById('email').setAttribute('title', 'Say hello!');
-          document.getElementById('resume').setAttribute('title', 'Download my resume!');
+    // These following two lines are the part that matter
+    if (currentLng == 'fr') {
+      currentLng = 'en';
+      document.title = "Resume - William LE POMMELET";
+      document.getElementById('linkedin').setAttribute('data-original-title', 'Let\'s get in touch!');
+      document.getElementById('github').setAttribute('data-original-title', 'Check out my code!');
+      document.getElementById('email').setAttribute('data-original-title', 'Say hello!');
+      document.getElementById('resume').setAttribute('data-original-title', 'Download my resume!');
 
-        } else {
-          currentLng = 'fr';
-          document.title = "CV - William LE POMMELET";
-          document.getElementById('linkedin').setAttribute('title', 'Mettons-nous en contact!');
-          document.getElementById('github').setAttribute('title', 'Jetez un oeil à mon code!');
-          document.getElementById('email').setAttribute('title', 'Passez me dire bonjour!');
-          document.getElementById('resume').setAttribute('title', 'Téléchargez mon CV!');
-        }
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-        })
+    } else {
+      currentLng = 'fr';
+      document.title = "CV - William LE POMMELET";
+      document.getElementById('linkedin').setAttribute('data-original-title', 'Mettons-nous en contact!');
+      document.getElementById('github').setAttribute('data-original-title', 'Jetez un oeil à mon code!');
+      document.getElementById('email').setAttribute('data-original-title', 'Passez me dire bonjour!');
+      document.getElementById('resume').setAttribute('data-original-title', 'Téléchargez mon CV!');
+    }
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     var translate = new Translate();
     var attributeName = 'data-tag';
     translate.init(attributeName, currentLng);
