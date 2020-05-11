@@ -7,8 +7,10 @@
   function load() {
     if (currentLng == 'fr') {
       currentLng = 'en';
+      document.title = "Resume - William LE POMMELET";
     } else {
       currentLng = 'fr';
+      document.title = "CV - William LE POMMELET";
     }
     var translate = new Translate();
     var attributeName = 'data-tag';
