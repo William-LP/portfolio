@@ -5,8 +5,6 @@
 <script>
   var currentLng = "en";
   function load() {
-    document.getElementById('toggle-language').addEventListener('click',
-      function () {
         // These following two lines are the part that matter
         if (currentLng == 'fr') {
           currentLng = 'en';
@@ -27,8 +25,6 @@
         $(function () {
           $('[data-toggle="tooltip"]').tooltip()
         })
-      }
-    );
     var translate = new Translate();
     var attributeName = 'data-tag';
     translate.init(attributeName, currentLng);
@@ -94,7 +90,7 @@
         </li>
         <br>
         <li class="nav-item">
-          <a id="toggle-language" href="javascript:load();" class="nav-link js-scroll-trigger" data-tag="language"></a>
+          <a href="javascript:load();" class="nav-link js-scroll-trigger" data-tag="language"></a>
         </li>
       </ul>
     </div>
