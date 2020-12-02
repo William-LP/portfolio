@@ -248,8 +248,8 @@
         <!-- Programming language -->
         <div class="subheading mb-3" data-tag="skills-title1"></div>
         <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <span class="iconify" data-icon="vscode-icons:file-type-powershell" data-inline="false" title="PowerShell" data-original-title="PowerShell"></span>            
+          <li class="list-inline-item" title="PowerShell" data-original-title="PowerShell">
+            <span class="iconify" data-icon="vscode-icons:file-type-powershell" data-inline="false"></span>            
           </li>
           <li class="list-inline-item">
             <span class="iconify" data-icon="logos:linux-tux" data-inline="false"></span>
@@ -374,9 +374,7 @@
   <script src="js/resume.min.js"></script>
 
   <script>
-    $(".top").tooltip({
-    placement: "top"
-});
+    $('li').tooltip();
   </script>
 
 </body>
