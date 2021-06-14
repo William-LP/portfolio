@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: portfolio
+  name: portfolio
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: portfolio
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: portfolio
+    spec:
+      containers:
+      - image: wlppoccicd.azurecr.io/portfolio:latest
+        name: portfolio
+        resources: {}
+status: {}
