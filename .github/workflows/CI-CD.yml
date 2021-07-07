@@ -1,0 +1,47 @@
+name: Publish Docker image
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  push_to_registry:
+    name: Push Docker image to GitHub Packages
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+
+    env:
+      DOCKER_REGISTRY: ghcr.io
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Log in to GitHub Docker Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ${{ env.DOCKER_REGISTRY }}
+          username: ${{ github.repository_owner }}
+          password: ${{ github.token }}
+
+      - name: Build container image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: |
+            ${{ env.DOCKER_REGISTRY }}/william-lp/portfolio:${{ github.sha }}
+            ${{ env.DOCKER_REGISTRY }}/william-lp/portfolio:latest
+                      
+      - name: Deploy to cluster
+        uses: garygrossgarten/github-action-ssh@release
+        with:
+          command: sudo kubectl rollout restart deployment/brasserie-le-sco-deployment
+          host: ${{ secrets.SERVER }}
+          username: ${{ secrets.USER }}
+#          passphrase: ${{ secrets.PASSPHRASE }}
+          privateKey: ${{ secrets.KEY}}          
