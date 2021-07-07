@@ -40,7 +40,7 @@ jobs:
       - name: Deploy to cluster
         uses: garygrossgarten/github-action-ssh@release
         with:
-          command: sudo kubectl rollout restart deployment/portfolio
+          command: sudo kubectl rollout restart deployment/portfolio-deployment
           host: ${{ secrets.SERVER }}
           username: ${{ secrets.USER }}
 #          passphrase: ${{ secrets.PASSPHRASE }}
